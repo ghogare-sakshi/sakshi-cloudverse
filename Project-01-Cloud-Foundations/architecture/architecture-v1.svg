@@ -1,0 +1,14 @@
+<svg width="680" height="480" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Secure AWS foundation and EC2 lab architecture</title>
+<desc>A Mac terminal connects via AWS CLI and SSH into an AWS account in the ap-south-1 Mumbai region. Inside the account, an IAM region shows the least-privilege Sakshi-admin user with MFA. An EC2 instance region shows a t3.micro Ubuntu server, containing a nested security group restricting SSH access to the user's IP only.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5f5e5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="680" height="480" fill="#ffffff"/>
+<g><rect x="460" y="30" width="160" height="56" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="540" y="55" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#2C2C2A">Your Mac</text><text x="540" y="72" text-anchor="middle" font-family="Arial" font-size="12" fill="#5F5E5A">Terminal + AWS CLI</text></g>
+<line x1="540" y1="86" x2="540" y2="128" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+<g><rect x="40" y="130" width="580" height="310" rx="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/><text x="60" y="162" font-family="Arial" font-size="14" font-weight="600" fill="#042C53">AWS account (ap-south-1)</text></g>
+<g><rect x="70" y="200" width="240" height="220" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="190" y="238" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#04342C">IAM</text><text x="190" y="258" text-anchor="middle" font-family="Arial" font-size="12" fill="#0F6E56">MFA-enabled, least privilege</text></g>
+<g><rect x="330" y="200" width="240" height="220" rx="12" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/><text x="450" y="238" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#4A1B0C">EC2 instance</text><text x="450" y="258" text-anchor="middle" font-family="Arial" font-size="12" fill="#993C1D">Ubuntu 26.04, t3.micro</text></g>
+<g><rect x="350" y="290" width="200" height="100" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/><text x="450" y="325" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#412402">Security group</text><text x="450" y="345" text-anchor="middle" font-family="Arial" font-size="12" fill="#854F0B">SSH 22, my IP only</text></g>
+</svg>
